@@ -54,6 +54,31 @@ public class ValidadorDeAtributosNulos {
 		return listaAtributos;
 	}*/
 	
+	/*Buscando campos em 2 classes onde há herança.
+	 * A busca é feita na classe pai e na claase filha.
+	 * 
+	 * public List<Field> findCPMarketingEnriquecidaFields() {
+		List<Field> result = new ArrayList<Field>();
+		Class<? extends ClassePai> cpClazz = ClasseFilha.class;
+		List<Class<? extends ClassePai>> classes = new ArrayList<Class<? extends ClassePai>>();
+		
+		classes.add(cpClazz);
+		
+		while(!classes.get(classes.size()-1).equals(ClassePai.class))
+			classes.add((Class<? extends ClassePai>) classes.get(classes.size()-1).getSuperclass());
+		
+		for (int i= classes.size()-1; i >=0; i--) {
+			Class<? extends ClassePai> clazz = classes.get(i);
+			Field classFields[] = clazz.getDeclaredFields();
+			
+			for (Field field : classFields){
+				result.add(field);
+			}
+		}
+		return result;
+	}
+	 */
+	
 	/* Modifique o programa feito para buscar valores nulos, para 
 	 * fazer a busca de uma String nos atributos públicos de uma classe.
 	 */
