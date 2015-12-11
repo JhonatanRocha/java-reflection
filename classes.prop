@@ -1,2 +1,4 @@
+### Arquivo de configuração ###
 java.util.List = java.util.ArrayList
 java.util.Map = java.util.HashMap
+br.com.reflection.cap3.InterfaceExemplo = br.com.reflection.cap3.ClasseDeExemplo
